@@ -519,7 +519,8 @@ BrowserWindow.prototype = {
       if (e.target == item.node.firstElementChild)
         return;
 
-      // If handling a right-click, ignore.
+      // The widget only supports left-click for now,
+      // so ignore right-clicks.
       if (e.type == "click" && e.button == 2)
         return;
 
